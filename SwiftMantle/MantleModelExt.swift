@@ -11,19 +11,19 @@ import Foundation
 extension BaseMantleModel {
     
     func toDictionary() -> NSDictionary? {
-        var dict = MTLJSONAdapter.JSONDictionaryFromModel(self)
+        let dict = MTLJSONAdapter.JSONDictionaryFromModel(self)
         return dict
     }
     
     func toData() -> NSData? {
-        var dict = self.toDictionary()
-        var data = NSJSONSerialization.dataWithJSONObject(dict!, options: NSJSONWritingOptions.PrettyPrinted, error: nil)
+        let dict = self.toDictionary()
+        let data = try? NSJSONSerialization.dataWithJSONObject(dict!, options: NSJSONWritingOptions.PrettyPrinted)
         return data
     }
     
     func toString() -> NSString {
-        var data = self.toData()
-        var str = NSString(data: data!, encoding: NSUTF8StringEncoding)
+        let data = self.toData()
+        let str = NSString(data: data!, encoding: NSUTF8StringEncoding)
         return str!
     }
 }

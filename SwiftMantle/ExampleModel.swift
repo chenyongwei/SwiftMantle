@@ -11,7 +11,7 @@ import Foundation
 
 class ExampleModel: BaseMantleModel {
     
-    var productId:NSNumber?
+    var productId:Int64 = 0
     var platform:String?
     var appVersion:String?
     

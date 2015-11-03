@@ -17,10 +17,11 @@ class BaseMantleModel: MTLModel, MTLJSONSerializing
         super.init()
     }
     
-    override init(dictionary dictionaryValue: [NSObject : AnyObject]!, error: NSErrorPointer) {
-        super.init(dictionary: dictionaryValue, error: error)
+    override init(dictionary dictionaryValue: [NSObject : AnyObject]!, error: ()) throws {
+        try super.init(dictionary: dictionaryValue, error: error)
     }
-    
+
+
     class func JSONKeyPathsByPropertyKey() -> [NSObject : AnyObject]!
     {
         return [:]

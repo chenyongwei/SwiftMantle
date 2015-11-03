@@ -23,9 +23,9 @@ class ViewController: UIViewController {
     
     @IBAction func convertToMantleObject(sender: UIButton) {
         var jsonPath:NSString = NSBundle.mainBundle().resourcePath!.stringByAppendingString("/data.json")
-        var jsonData:NSData = NSData(contentsOfFile: jsonPath, options: nil, error: nil)!
-        var jsonDictionary:NSDictionary =  NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.AllowFragments, error: nil) as NSDictionary
-        var exampleModel = MTLJSONAdapter.modelOfClass(ExampleModel.self, fromJSONDictionary: jsonDictionary, error: nil) as ExampleModel
+        var jsonData:NSData = NSData(contentsOfFile: jsonPath.stringByAppendingString(""))!
+        var jsonDictionary:NSDictionary =  (try! NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.AllowFragments)) as! NSDictionary
+        var exampleModel = (try! MTLJSONAdapter.modelOfClass(ExampleModel.self, fromJSONDictionary: jsonDictionary as! [NSObject : AnyObject] as [NSObject : AnyObject])) as! ExampleModel
         var exampleModelStr = exampleModel.toString()
         NSLog("%@", exampleModelStr)
     }

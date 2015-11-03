@@ -18,30 +18,6 @@
 		85A8C3E9193F6632003C7A79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A8C3E8193F6632003C7A79 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		85A8C3EF193F6632003C7A79 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 85A8C3D4193F6632003C7A79 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 85A8C3DB193F6632003C7A79;
-			remoteInfo = SwiftSingleView;
-		};
-		85A8C3FE193F6661003C7A79 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 85A8C3D4193F6632003C7A79 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 85A8C3DB193F6632003C7A79;
-			remoteInfo = SwiftSingleView;
-		};
-		85A8C400193F6661003C7A79 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 85A8C3D4193F6632003C7A79 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 85A8C3DB193F6632003C7A79;
-			remoteInfo = SwiftSingleView;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		189573C30F6D925FC2B77B0C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8506A6C61A6788B100A2119B /* BaseMantleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMantleModel.swift; sourceTree = "<group>"; };
@@ -55,7 +31,6 @@
 		85A8C3E3193F6632003C7A79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		85A8C3E6193F6632003C7A79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85A8C3E8193F6632003C7A79 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		85A8C3EE193F6632003C7A79 /* SwiftMantleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMantleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F83A21E41348DB83534B7E38 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FED9A9B55D07F3DB531ECA24 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,13 +41,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E970AD8BD9A90E0CDD17922 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		85A8C3EB193F6632003C7A79 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				85A8C3DC193F6632003C7A79 /* SwiftMantle.app */,
-				85A8C3EE193F6632003C7A79 /* SwiftMantleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,41 +137,19 @@
 			productReference = 85A8C3DC193F6632003C7A79 /* SwiftMantle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		85A8C3ED193F6632003C7A79 /* SwiftMantleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 85A8C3FB193F6632003C7A79 /* Build configuration list for PBXNativeTarget "SwiftMantleTests" */;
-			buildPhases = (
-				85A8C3EA193F6632003C7A79 /* Sources */,
-				85A8C3EB193F6632003C7A79 /* Frameworks */,
-				85A8C3EC193F6632003C7A79 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				85A8C3F0193F6632003C7A79 /* PBXTargetDependency */,
-				85A8C3FF193F6661003C7A79 /* PBXTargetDependency */,
-				85A8C401193F6661003C7A79 /* PBXTargetDependency */,
-			);
-			name = SwiftMantleTests;
-			productName = SwiftSingleViewTests;
-			productReference = 85A8C3EE193F6632003C7A79 /* SwiftMantleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		85A8C3D4193F6632003C7A79 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = KW;
 				TargetAttributes = {
 					85A8C3DB193F6632003C7A79 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					85A8C3ED193F6632003C7A79 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 85A8C3DB193F6632003C7A79;
 					};
 				};
 			};
@@ -222,7 +167,6 @@
 			projectRoot = "";
 			targets = (
 				85A8C3DB193F6632003C7A79 /* SwiftMantle */,
-				85A8C3ED193F6632003C7A79 /* SwiftMantleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,13 +179,6 @@
 				85A8C3E7193F6632003C7A79 /* Main.storyboard in Resources */,
 				8506A6CC1A67B9DC00A2119B /* data.json in Resources */,
 				85A8C3E9193F6632003C7A79 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		85A8C3EC193F6632003C7A79 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,32 +230,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85A8C3EA193F6632003C7A79 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		85A8C3F0193F6632003C7A79 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 85A8C3DB193F6632003C7A79 /* SwiftMantle */;
-			targetProxy = 85A8C3EF193F6632003C7A79 /* PBXContainerItemProxy */;
-		};
-		85A8C3FF193F6661003C7A79 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 85A8C3DB193F6632003C7A79 /* SwiftMantle */;
-			targetProxy = 85A8C3FE193F6661003C7A79 /* PBXContainerItemProxy */;
-		};
-		85A8C401193F6661003C7A79 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 85A8C3DB193F6632003C7A79 /* SwiftMantle */;
-			targetProxy = 85A8C400193F6661003C7A79 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		85A8C3E5193F6632003C7A79 /* Main.storyboard */ = {
@@ -439,42 +351,6 @@
 			};
 			name = Release;
 		};
-		85A8C3FC193F6632003C7A79 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftSingleView.app/SwiftSingleView";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftSingleViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftMantleTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		85A8C3FD193F6632003C7A79 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwiftSingleView.app/SwiftSingleView";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SwiftSingleViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftMantleTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -492,15 +368,6 @@
 			buildConfigurations = (
 				85A8C3F9193F6632003C7A79 /* Debug */,
 				85A8C3FA193F6632003C7A79 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		85A8C3FB193F6632003C7A79 /* Build configuration list for PBXNativeTarget "SwiftMantleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				85A8C3FC193F6632003C7A79 /* Debug */,
-				85A8C3FD193F6632003C7A79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
